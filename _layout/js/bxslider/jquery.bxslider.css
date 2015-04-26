@@ -1,0 +1,195 @@
+/**
+ * Name: bxslider.css
+ *	
+ *	T.O.C
+ *
+ *	=Basics
+ *	=Slider theme
+ *	=Loader
+ *	=Pager
+ *	=Directional Controls (Next / Prev)
+ *	=Auto Controls (Start / Stop)
+ *	=Pager with auto controls hibrid layout	
+ *	=Image Captions
+ *
+ */
+
+ 
+ /* ==========================================================================
+   =Basics
+   ========================================================================== */
+
+	.bx-wrapper {
+		position: relative;
+		padding: 0;
+		margin: 0 auto 60px auto;
+	}
+	
+	.bx-wrapper ul { list-style: none; }
+	
+	.bx-wrapper img {
+		display: block;
+		max-width: 100%;
+	}
+
+/* ==========================================================================
+   =Slider theme
+   ========================================================================== */
+
+	.bx-wrapper .bx-viewport {
+		/*fix other elements on the page moving (on Chrome)*/
+		-webkit-transform: translatez(0);
+		    -moz-transform: translatez(0);
+		   -ms-transform: translatez(0);
+			-o-transform: translatez(0);
+			   transform: translatez(0);
+	}
+	
+	/**
+ 	 * 1. z-index is 55 because .bx-wrapper ul li is 50
+ 	 */
+	
+	.bx-wrapper .bx-pager,
+	.bx-wrapper .bx-controls-auto {
+		position: absolute;
+		z-index: 55; /* 1 */
+		bottom: 20px;
+		width: 100%;
+	}
+
+/* ==========================================================================
+   =Loader
+   ========================================================================== */
+
+	.bx-wrapper .bx-loading {
+		position: absolute;
+		z-index: 10000;
+		top: 0;
+		left: 0;
+		width: 100%;
+		min-height: 50px;
+		height: 100%;
+		background: #fff url(images/bx_loader.gif) no-repeat center center;
+	}
+
+/* ==========================================================================
+   =Pager
+   ========================================================================== */
+
+	.bx-wrapper .bx-pager {
+		padding-top: 20px;
+		color: #28353e;
+		text-align: center;
+	}
+	
+	.bx-wrapper .bx-pager .bx-pager-item,
+	.bx-wrapper .bx-controls-auto .bx-controls-auto-item { display: inline-block; }
+	
+	.bx-wrapper .bx-pager.bx-default-pager a {
+		display: block;
+		width: 7px;
+		height: 7px;
+		border-radius: 5px;
+		outline: 0;
+		margin: 0 5px;
+		border: 1px solid #98d4ec;		
+		text-indent: -9999px;	
+	}
+	
+	.bx-wrapper .bx-pager.bx-default-pager a:hover,
+	.bx-wrapper .bx-pager.bx-default-pager a.active { background: #98d4ec; }
+
+/* ==========================================================================
+   =Directional Controls (Next / Prev)
+   ========================================================================== */
+
+	.bx-wrapper .bx-prev {
+		left: 20px;
+		background: url(../../images/left.png) no-repeat center center;
+	}
+	
+	.bx-wrapper .bx-next {
+		right: 20px;
+		background: url(../../images/right.png) no-repeat center center;
+	}
+	
+	/**
+	 * 1. changing the z-index from the original 9999 to 
+	 */
+	
+	.bx-wrapper .bx-controls-direction a {
+		position: absolute;
+		z-index: 1000; /* 1 */
+		top: 50%;
+		width: 10px;
+		height: 23px;
+		outline: 0;
+		margin-top: -11.5px;
+		text-indent: -9999px;
+	}
+	
+	.bx-wrapper .bx-controls-direction a.disabled { display: none; }
+
+/* ==========================================================================
+   =Auto Controls (Start / Stop)
+   ========================================================================== */
+
+	.bx-wrapper .bx-controls-auto { text-align: center; }
+	
+	.bx-wrapper .bx-controls-auto .bx-start {
+		display: block;
+		width: 10px;
+		height: 11px;
+		outline: 0;
+		margin: 0 3px;
+		background: url(images/controls.png) -86px -11px no-repeat;
+		text-indent: -9999px;
+	}
+	
+	.bx-wrapper .bx-controls-auto .bx-start:hover,
+	.bx-wrapper .bx-controls-auto .bx-start.active { background-position: -86px 0; }
+	
+	.bx-wrapper .bx-controls-auto .bx-stop {
+		display: block;
+		width: 9px;
+		height: 11px;
+		outline: 0;
+		margin: 0 3px;
+		background: url(images/controls.png) -86px -44px no-repeat;
+		text-indent: -9999px;
+	}
+	
+	.bx-wrapper .bx-controls-auto .bx-stop:hover,
+	.bx-wrapper .bx-controls-auto .bx-stop.active { background-position: -86px -33px; }
+
+/* ==========================================================================
+   =Pager with auto controls hibrid layout	
+   ========================================================================== */
+
+	.bx-wrapper .bx-controls.bx-has-controls-auto.bx-has-pager .bx-pager {
+		width: 80%;
+		text-align: left;	
+	}
+	
+	.bx-wrapper .bx-controls.bx-has-controls-auto.bx-has-pager .bx-controls-auto {
+		right: 0;
+		width: 35px;
+	}
+
+/* ==========================================================================
+   =Image Captions
+   ========================================================================== */
+
+	.bx-wrapper .bx-caption {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+		background: rgba(80, 80, 80, 0.75);
+	}
+	
+	.bx-wrapper .bx-caption span {
+		display: block;
+		padding: 10px;
+		color: #fff;
+	}

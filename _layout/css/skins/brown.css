@@ -1,0 +1,1277 @@
+/**
+ * Name: default.css
+ *
+ * -
+ *
+ * The default color scheme for the template
+ *
+ */
+ 
+ /* ==========================================================================
+   =Typography
+   ========================================================================== */
+   	 
+	body {
+		background-color: #fff;
+		color: #7b868c;
+	}
+
+	h1, 
+	h2, 
+	h3, 
+	h4, 
+	h5, 
+	h6 {
+		color: #28353e;
+	}
+		
+	h1 a, 
+	h2 a, 
+	h3 a, 
+	h4 a, 
+	h5 a, 
+	h6 a {
+		color: #28353e; 
+	}
+	
+	abbr[title] {  
+		border-bottom: 1px dotted #d7d7d7; 
+	}
+	
+	blockquote span { 
+		color: #d7d7d7;  
+	}
+
+	hr { 
+		border: solid #d7d7d7; 
+	}
+	
+	code { 
+		border: 1px solid #d7d7d7;
+		background-color: #f3f3f3;  
+		color: #d50f25;  
+	}
+	
+	pre { 
+		border: 1px solid #d7d7d7;   
+		background-color: #f3f3f3; 
+	}
+	
+	.hr { 
+		border-top: 1px solid #d7d7d7;  
+	}
+	
+	.text-highlight { color: #be9665; }
+	
+	.mute{ 
+		color: #a9b5bb;
+	}
+	
+	@media (max-width: 767px) {
+	 
+		body { 
+			background-color: #fff; 
+		}
+
+	}
+
+/* ==========================================================================
+   =Typography - Links
+   ========================================================================== */
+	
+	a, 
+	a:visited { 
+		color: #be9665; 
+	}
+	
+	a:active {
+ 		background: transparent;
+	}
+	
+	a:hover, 
+	a:focus {
+		color: #be9665; 
+	}	
+
+/* ==========================================================================
+   =Typography - Tables
+   ========================================================================== */
+
+	table { 
+		background-color: transparent; 
+	}
+
+	table th, 
+	table td {
+		border-top: 1px solid #d7d7d7;
+	}
+	
+/* ==========================================================================
+   =Typography - Forms
+   ========================================================================== */
+
+	label span { color: #d50f25; }
+	
+	input,
+	textarea,
+	select {
+		border: 1px solid #d7d7d7;
+		background: transparent;
+	}
+	
+	input[type="text"]:focus,
+	input[type="email"]:focus,
+	input[type="url"]:focus,
+	textarea:focus {
+		border-color: #bbb;	
+	}
+	
+	select:focus {
+	  outline: thin dotted #bbb;
+	}
+	
+	input:-moz-placeholder,
+	textarea:-moz-placeholder {
+		color: #d7d7d7;
+	}
+	
+	input:-ms-input-placeholder,
+	textarea:-ms-input-placeholder {
+		color: #d7d7d7;
+	}
+	
+	input::-webkit-input-placeholder,
+	textarea::-webkit-input-placeholder {
+		color: #d7d7d7;
+	}
+
+/* ==========================================================================
+   =Misc
+   ========================================================================== */
+   
+	.javascript-required,
+	.modern-browser-required{
+		background-color: #d50f25;
+
+	}
+	
+/* ==========================================================================
+   =Accordions and Toogles
+   ========================================================================== */
+
+/* =Accordion
+   ========================================================================== */
+
+	.accordion-item {
+		border: 1px solid #d7d7d7;
+	}
+	
+	a.accordion-item { color: #7b868c; }
+	
+	.accordion-item:hover,
+	.accordion-item.active {
+		border-color: #be9665;
+		background-color: #be9665;
+		color: #fff;
+	}
+	
+/* =Toogle
+   ========================================================================== */
+
+	.toggle-item {
+		border: 1px solid #d7d7d7;
+	}
+	
+	a.toggle-item { color: #7b868c; }
+	
+	.toggle-item:hover,
+	.toggle-item.active {
+		border-color: #be9665;
+		background-color: #be9665;
+		color: #fff;
+	}
+
+/* ==========================================================================
+   =Alerts
+   ========================================================================== */
+
+	.alert {
+		background-color: #be9665;
+		color: #fff;
+	}
+	
+	.alert.info {
+		background-color: #f1f3f4;
+		color: #7b868c;
+	}
+	
+	.alert.success {
+		background-color: #d0dadf;
+		color: #7b868c;
+	}
+	
+	.alert.error {
+		background-color: #474d50;
+		color: #fff;
+	}
+	
+	.alert.warning {
+		background-color: #7b868c;
+		color: #fff;
+	}
+	
+/* ==========================================================================
+   =Breadcrumbs
+   ========================================================================== */
+	
+	.breadcrumbs ul:before {
+		color: #be9665;
+	}
+	
+	.breadcrumbs ul li a { color: #7b868c; }
+	
+	.breadcrumbs ul li a:hover { 
+		color: #be9665;
+	}
+   
+/* ==========================================================================
+   =Buttons
+   ========================================================================== */
+
+/* =Default Button
+   ========================================================================== */
+   
+	.btn {
+		border: 2px solid #be9665;
+		background-color: #be9665;
+		color: #fff;
+	}
+	
+	a.btn { color: #fff; }
+
+	.btn.alt {
+		background-color: transparent;
+		color: #be9665;
+	}
+	
+	a.btn.alt { color: #be9665; }
+
+/* ==========================================================================
+   =Custom Lists
+   ========================================================================== */
+	
+	ul.fill-circle li:before {
+		background-color: #be9665;
+		content: "";
+	}
+	
+	ul.fill-circle.border li {
+		border-bottom: 1px solid #d7d7d7;
+	}
+		
+/* ==========================================================================
+   =Dividers
+   ========================================================================== */
+	
+	.divider.single-line { border-top: 1px solid #d7d7d7; }
+	
+	.divider.double-line { border-top: 4px double #d7d7d7; }
+	
+	.divider.single-dotted {
+		 background: url(../../images/bg-single-dotted.png) repeat-x top left ;  
+	}
+	
+	.divider.double-dotted { 
+		background: url(../../images/bg-double-dotted.png) repeat-x top left; 
+	}
+
+/* ==========================================================================
+   =Headlines
+   ========================================================================== */
+	
+	.headline h4 { 
+		color: #7b868c;
+	}
+	
+/* ==========================================================================
+   =Icon Boxes
+   ========================================================================== */
+
+/* =Icon Box 1
+   ========================================================================== */
+		
+	.icon-box-1 > i { 
+		color: #be9665;
+	} 
+
+/* =Icon Box 2
+   ========================================================================== */
+		
+	.icon-box-2 > i {
+		border: 2px solid #be9665;
+		color: #be9665;
+	}
+	
+	.icon-box-2:hover > i {
+		background-color: #be9665;
+		color: #fff;	
+	}
+	
+	.icon-box-2 h5 small {
+		color: #a9b5bb;
+	}	
+
+/* =Icon Box 3
+   ========================================================================== */
+
+	.icon-box-3 > h4 { 
+		border: 2px solid #28353e;
+	} 
+	
+	.icon-box-3 h3 a {
+		color: #28353e;
+	}
+	
+	.icon-box-3:hover h3 a {
+		color: #be9665;
+	}
+	
+	.icon-box-3:hover > h4 {
+		border-color: #be9665;
+		color: #be9665;
+	}
+	
+/* =Icon Box 4
+   ========================================================================== */
+		
+	.icon-box-4 > i {
+		color: #be9665;
+	}
+	
+/* =Icon Box 5
+   ========================================================================== */
+		
+	.icon-box-5 > i {
+		color: #be9665;	
+	}
+	
+	.icon-box-5 h4 a { color: #be9665; }
+
+/* ==========================================================================
+   =Info box
+   ========================================================================== */
+   	
+	.info-box {
+		background-color: #f2f7fa;
+	}
+	
+	.info-box-2 {
+		background-color: #be9665;
+		color: #fff;
+	}
+	
+	.info-box-2 h1,
+	.info-box-2 h2,
+	.info-box-2 h3,
+	.info-box-2 h4,
+	.info-box-2 h5,
+	.info-box-2 h6 { color: #fff; }
+	
+	.info-box-2 .btn { 
+		background-color: #fff; 
+		color: #be9665;
+	}
+	
+	.info-box-2 .btn.alt {
+		border-color: #fff;
+		background-color: transparent;
+		color: #fff;
+	}
+	
+	
+	#box-1 {
+		background-color: #28353e;
+	}
+
+/* ==========================================================================
+   =Milestones
+   ========================================================================== */
+	
+	.milestone .milestone-content {
+		color: #be9665;
+	}
+	
+	.milestone .milestone-description {
+		border-bottom: 1px solid #d7d7d7;
+		color: #28353e;
+	}
+
+/* ==========================================================================
+   =Our Process
+   ========================================================================== */
+
+/* =Horizontal process
+   ========================================================================== */
+	
+	.horizontal-process-builder:before {
+		border-top: 1px solid #d7d7d7;
+	}
+	
+	.horizontal-process-builder li:before {
+		border: 1px solid #d7d7d7;
+		background-color: #fff;
+	}
+	
+	.horizontal-process-builder li:hover:before {
+		border-color: #d7d7d7;
+	}
+	
+/* =Vertical process
+   ========================================================================== */
+	
+	.vertical-process-builder:before {
+		border-left: 1px solid #d7d7d7;
+	}
+	
+	.vertical-process-builder li i,
+	.vertical-process-builder li h1 {
+		border: 1px solid #d7d7d7;
+		outline: 10px solid #fff;
+		background-color: #fff;
+	}
+	
+	.vertical-process-builder li:hover i,
+	.vertical-process-builder li:hover h1 {
+		background-color: #f3f3f3;
+	}
+
+/* ==========================================================================
+   =Pricing Tables
+   ========================================================================== */
+
+	.pricing-table {
+		border: 2px solid #d7d7d7;
+	}
+	
+	.pricing-table.alt {
+		border-color: #f8f8f8;
+		background-color: #f8f8f8;
+	}
+	
+	.pricing-table-header h1 sup {
+		color: #7b868c;
+	}
+	
+	.pricing-table-header h1 sub {
+		color: #7b868c;
+	}
+	
+	.pricing-table:hover { border-color: #be9665; }
+	.pricing-table:hover .pricing-table-header h1 { color: #be9665; }
+	
+	.pricing-table.alt:hover {
+		border-color: #be9665;
+		background-color: #be9665;
+		color: #fff;
+	}
+	
+	.pricing-table.alt:hover .pricing-table-header h1 sup,
+	.pricing-table.alt:hover .pricing-table-header h1 sub,
+	.pricing-table.alt:hover .pricing-table-header h1,
+	.pricing-table.alt:hover .pricing-table-header h3 { color: #fff; }
+	
+	.pricing-table.alt:hover .btn { border-color: #fff; }
+
+/* ==========================================================================
+   =Progress Bar
+   ========================================================================== */
+
+	.progress-bar-description {
+		color: #28353e;
+	}
+	
+	.progress-bar {
+		background-color: #f3f3f3;
+		box-shadow: inset 0 1px 5px 0 #d7d7d7;
+	}
+	
+	.progress-bar .progress-bar-outer {
+		background-color: #be9665;
+	}
+
+/* ==========================================================================
+   =Social Media
+   ========================================================================== */
+
+	a.social-icon {
+		color: #7b868c;
+	}
+	
+	a.facebook-icon:hover { color: #0e59a0 !important; }
+	a.twitter-icon:hover { color: #0ea4ff !important; }
+	a.dribble-icon:hover { color: #ea73a0 !important; }
+	a.pinterest-icon:hover { color: #d73532 !important; }
+	a.googleplus-icon:hover { color: #282927 !important; }
+	a.tumblr-icon:hover { color: #586980 !important; }
+	a.instagram-icon:hover { color: #82685a !important; }
+	a.rss-icon:hover { color: #f79638 !important; }
+	a.linkedin-icon:hover { color: #018faf !important; }
+	a.skype-icon:hover { color: #00b0f6 !important; }
+	a.flickr-icon:hover { color: #0061db !important; }
+	a.vimeo-icon:hover { color: #63879c !important; }
+	a.github-icon:hover { color: #3b3b3b !important; }
+	a.youtube-icon:hover { color: #cc181e !important; }
+	a.windows-icon:hover { color: #6dc2e9 !important; }
+	a.dropbox-icon:hover { color: #007ee5 !important; }
+	a.xing-icon:hover { color: #026566 !important; }	
+	a.adn-icon:hover { color: #1ea076 !important; }
+	a.android-icon:hover { color: #98cb02 !important; }
+	a.apple-icon:hover { color: #000000 !important; }
+	a.behance-icon:hover { color: #2d9ad2 !important; }
+	a.bitbucket-icon:hover { color: #214f81 !important; }
+	a.bitcoin-icon:hover { color: #f7931b !important; }
+	a.codepan-icon:hover { color: #000000 !important; }
+	a.css3-icon:hover { color: #3289ce !important; }
+	a.delicious-icon:hover { color: #3399fe !important; }
+	a.deviantart-icon:hover { color: #c8da30 !important; }
+	a.digg-icon:hover { color: #0080c2 !important; }
+	a.drupal-icon:hover { color: #0077b9 !important; }
+	a.empire-icon:hover { color: #000000 !important; }
+	a.foursquare-icon:hover { color: #daecb0 !important; }
+	a.git-icon:hover { color: #f34f29 !important; }
+	a.gitti-icon:hover { color: #634c3e !important; }
+	a.hacker-news-icon:hover { color: #f18642 !important; }
+	a.html5-icon:hover { color: #e54c1f !important; }
+	a.joomla-icon:hover { color: #016fb9 !important; }
+	a.jsfiddle-icon:hover { color: #4679a4 !important; }
+	a.linux-icon:hover { color: #fece0e !important; }
+	a.maxcdn-icon:hover { color: #f36f20 !important; }
+	a.openid-icon:hover { color: #fe6101 !important; }
+	a.pagelines-icon:hover { color: #3783e3 !important; }
+	a.pied-piper-icon:hover { color: #0c7b48 !important; }
+	a.qq-icon:hover { color: #23286c !important; }
+	a.rebel-icon:hover { color: #000000 !important; }
+	a.reddit-icon:hover { color: #cee3f8 !important; }
+	a.renren-icon:hover { color: #0d81e4 !important; }
+	a.share-icon:hover { color: #252525 !important; }
+	a.slack-icon:hover { color: #453744 !important; }
+	a.soundcloud-icon:hover { color: #fe4e00 !important; }
+	a.spotify-icon:hover { color: #80bb41 !important; }
+	a.stack-exchange-icon:hover { color: #265a93 !important; }
+	a.stackoverflow-icon:hover { color: #fea501 !important; }
+	a.steam-icon:hover { color: #191919 !important; }
+	a.stumbleupon-icon:hover { color: #f04f23 !important; }
+	a.tencent-weibo-icon:hover { color: #0063a7 !important; }
+	a.trello-icon:hover { color: #226784 !important; }
+	a.vine-icon:hover { color: #00b081 !important; }
+	a.vk-icon:hover { color: #50769d !important; }
+	a.wechat-icon:hover { color: #a4dc31 !important; }
+	a.weibo-icon:hover { color: #d82828 !important; }
+	a.wordpress-icon:hover { color: #454442 !important; }
+	a.yahoo-icon:hover { color: #4b04a8 !important; }
+
+/* ==========================================================================
+   =Styled Tables
+   ========================================================================== */
+
+	.table-bordered { 
+		border: 1px solid #d7d7d7; 	
+	}
+	
+	.table-bordered th, 
+	.table-bordered td { border-left: 1px solid #d7d7d7; }
+	
+	.table-striped tbody tr:nth-child(odd) td,
+	.table-striped tbody tr:nth-child(odd) th { background-color: #f3f3f3; }	
+
+	@media (max-width: 480px) {
+		
+		tr { border-top: 1px solid #bbb; }
+	  
+	}
+
+/* ==========================================================================
+   =Tabs
+   ========================================================================== */
+
+/* =Horizontal tabs
+   ========================================================================== */
+
+	.tabs-container .tabs-menu { 
+		border-color: #d7d7d7;
+	}
+	
+	.tabs-container .tabs-menu li a { 
+		border-color: #d7d7d7;
+		background-color: #fff;
+		color: #7b868c;
+	}
+	
+	.tabs-container .tabs-menu li:first-child a { border-color: #d7d7d7; }
+	
+	.tabs-container .tabs-menu li.active a {
+		border-bottom-color: #fff; 
+		background-color: #fff;
+		color: #be9665; 
+	}
+	
+	.tabs-container .tabs {
+		border-color: #d7d7d7; 
+	}
+	
+	.tabs-container .tab-content {
+		background-color: #fff;
+	}
+	
+/* =Vertical tabs
+   ========================================================================== */
+	
+	.vertical-tabs-container {
+		border: 1px solid #d7d7d7;
+		background-color: #fff;
+	}
+	
+	.vertical-tabs-container .tabs-menu { 
+		border-right: 1px solid  #d7d7d7;
+	}
+	
+	.vertical-tabs-container .tabs-menu li a { 
+		border-bottom: 1px solid #d7d7d7;
+		color: #7b868c;
+	}
+	
+	.vertical-tabs-container .tabs-menu li.active a {
+		border-right: 1px solid #fff;
+		background-color: #fff;
+		color: #be9665;
+	}
+	
+	.vertical-tabs-container .tab-content { 
+		border-left: 1px solid  #d7d7d7;
+		background-color: #fff;
+	}
+	
+	@media (min-width: 768px) and (max-width: 991px) {
+
+		.vertical-tabs-container .tabs-menu li.active a { 
+			border-right-color: #d7d7d7;
+			border-bottom-color: #d7d7d7; 
+		}		
+	  
+	}
+	
+	@media (max-width: 767px) {
+	
+		.tabs-container .tabs-menu li a { 
+			border-color: #d7d7d7;
+		}
+		
+		.tabs-container .tabs-menu li:first-child a { border-color: #d7d7d7; }
+		
+		.tabs-container .tabs-menu li.active a {  
+			border-bottom-color: #d7d7d7;
+			background-color: #fff; 
+		}
+
+		.vertical-tabs-container .tabs-menu li.active a { 
+			border-right-color: #d7d7d7;
+			border-bottom-color: #d7d7d7; 
+		}
+	  
+	}
+	
+/* ==========================================================================
+   =Testimonials
+   ========================================================================== */
+	
+	.testimonial > i {
+		color: #be9665;
+	}
+	
+	.testimonial > h5 {
+		color: #be9665;
+	}
+	
+	.testimonial blockquote p span { color: #be9665; }
+	
+	.testimonial h5 span { color: #d7d7d7; }
+	
+	
+/* ==========================================================================
+   =Team Member
+   ========================================================================== */
+	
+	.team-member h5 small {
+		color: #be9665;
+	}
+	
+/* ==========================================================================
+   =Portfolio Item
+   ========================================================================== */
+	
+	.portfolio-item-overlay {
+		background-color: #fff;
+	}
+	
+	.portfolio-item-overlay-actions .portfolio-item-zoom i,
+	.portfolio-item-overlay-actions .portfolio-item-link i {
+		color: #fff;
+	}
+	
+/* ==========================================================================
+   =Portfolio Filter
+   ========================================================================== */
+	
+	.portfolio-filter ul li a {
+		color: #7b868c;
+	}
+	
+	.portfolio-filter ul li a:hover,
+	.portfolio-filter ul li a.active { color: #be9665; }
+
+/* ==========================================================================
+   =Portfolio Pagination
+   ========================================================================== */
+
+	.pagination a { 
+		border: 2px solid #be9665;
+	}
+	
+	.pagination li.current a,
+	.pagination li a:hover { 
+		background-color: #be9665; 
+		color: #fff; 
+	}
+   
+/* ==========================================================================
+   =Portfolio Switcher
+   ========================================================================== */
+	
+	.portfolio-switcher ul li a {
+		border: 2px solid transparent;
+	}
+	
+	.portfolio-switcher ul li.active a,
+	.portfolio-switcher ul li a:hover { border-color: #be9665; }
+	
+/* ==========================================================================
+   =Project Navigation
+   ========================================================================== */
+	
+	.project-navigation a {
+		color: #28353e;
+	}
+	
+	.project-navigation a:hover { color: #be9665; }
+	
+/* ==========================================================================
+   =Contact form
+   ========================================================================== */
+	
+	label.validation-error { color: #d50f25; }
+	
+	input.validation-error,
+	textarea.validation-error,
+	select.validation-error { border: 1px solid #d7d7d7; }  
+	         
+/* ==========================================================================
+   =Blog
+   ========================================================================== */
+
+	.blog-post {
+		border-bottom: 1px solid #d7d7d7;
+	}
+	
+	.blog-post blockquote {
+		background-color: #be9665;
+		color: #fff;
+	}
+	
+	.blog-post-title p a {
+		color: #28353e;
+	}
+	
+	.blog-post-title p a small {
+		color: #7b868c;
+	}
+
+/* ==========================================================================
+   =Fullwidth Section
+   ========================================================================== */
+	 
+   .fullwidth-section {
+		background-color: #f3f3f3;	
+	}
+	
+	.fullwidth-section .table-striped tbody tr:nth-child(odd) td,
+	.fullwidth-section .table-striped tbody tr:nth-child(odd) th { background-color: #fff; }
+	
+	
+	/* Backgrounds for fullwidth-section */
+	
+	#bg-video {
+		background-image: url(../../../_content/backgrounds/1920x1080-2.jpg);
+	}
+	
+	#bg-3 {
+		background-color: #be9665;
+	}
+	
+	#bg-3 #s {
+		border-color: #fff;
+		color: #fff;
+	}
+	
+	#bg-3 #s:focus { border-color: #bbb; }
+	
+	#bg-4 {
+		background-image: url(../../../_content/backgrounds/1920x1080-1.jpg);
+	}
+	
+	#bg-5 {
+		background-image: url(../../../_content/backgrounds/1920x1280-brown.jpg);
+	}
+	
+/* ==========================================================================
+   =WordPress Default Classes
+   ========================================================================== */
+	
+	.sticky {
+		border: 1px solid #d7d7d7;
+		background-color: #f3f3f3;
+	}
+	
+	.wp-caption {
+		border: 1px solid #d7d7d7;
+		background: #fff;
+	}
+	
+/* ==========================================================================
+   =WordPress Widgets
+   ========================================================================== */
+	
+/* =Widgets default
+   ========================================================================== */
+	
+	.widget {
+		border-bottom: 1px solid #d7d7d7;
+	}
+	
+	.widget-title { 
+		text-transform: uppercase;
+	}
+	
+/* =Text Widget
+   ========================================================================== */
+	
+	.textwidget blockquote:before {
+		color: #be9665;
+	}
+	
+/* =Search Widget
+   ========================================================================== */
+	
+	#s { 
+		border: 2px solid #be9665; 
+	}
+	
+	#s:focus { border-color: #bbb; }
+	
+	#searchsubmit {
+		background: url(../../images/bg-search.png) no-repeat center center;
+	}
+
+/* =Recent Entries Widget
+   ========================================================================== */
+	
+	.widget_recent_entries ul li a { color: #7b868c; }
+	
+	.widget_recent_entries ul li a.date { 
+		color: #be9665;
+	}
+	
+	.widget_recent_entries ul li a.date:hover { color: #7b868c; }
+	
+	.widget_recent_entries ul li a:hover {
+		color: #be9665;
+	}
+	
+/* =Pages Widget
+   ========================================================================== */
+	
+	.widget_pages a {
+		color: #7b868c;
+	}
+	
+	.widget_pages a:hover { 
+		color: #be9665;
+	}
+	
+	#footer-bottom .widget_pages ul li {
+		border-right: 2px solid #7b868c;
+	}
+	
+/* =Archive Widget
+   ========================================================================== */
+	
+	.widget_archive a {
+		color: #7b868c;
+	}
+	
+	.widget_archive a:hover { 
+		color: #be9665;
+	}
+	
+/* =Categories Widget
+   ========================================================================== */
+	
+	.widget_categories a {
+		color: #7b868c;
+	}
+	
+	.widget_categories a:hover { 
+		color: #be9665;
+	}
+	
+/* =Meta Widget
+   ========================================================================== */
+	
+	.widget_meta a {
+		color: #7b868c;
+	}
+	
+	.widget_meta a:hover { 
+		color: #be9665;
+	}
+	
+/* =Tag Cloud Widget
+   ========================================================================== */
+	
+	.widget_tag_cloud a { 
+		border: 2px solid #be9665;
+		background-color: #be9665;
+		color: #fff;
+	}
+	
+	.widget_tag_cloud a:hover { 
+		background-color: #fff;
+		color: #be9665; 
+	}
+	
+/* =Nav Menu Widget
+   ========================================================================== */
+	
+	.widget_nav_menu a {
+		color: #7b868c;
+	}
+	
+	.widget_nav_menu a:hover { 
+		color: #be9665;
+	}	
+		
+/* ==========================================================================
+   =WordPress Custom Widgets
+   ========================================================================== */
+	
+/* =EWF Navigation widget
+   ========================================================================== */
+	
+	.ewf_widget_navigation a {
+		color: #7b868c;
+	}
+	
+	.ewf_widget_navigation a:hover { 
+		color: #be9665;
+	}	
+
+/* ==========================================================================
+   =WordPress Comments
+   ========================================================================== */
+	
+	.commentlist .vcard cite.fn a.url {
+		color: #7b868c;
+	}
+	
+	.commentlist .comment-meta a { color: #7b868c; }
+	
+	.commentlist > li,
+	.commentlist > li ul.children li {
+		border-bottom: 1px solid #d7d7d7;
+	}
+	
+/* ==========================================================================
+   =WordPress Comment Form
+   ========================================================================== */	
+
+	#commentform { 
+		border-bottom: 1px solid #d7d7d7;
+	}
+	
+/* ==========================================================================
+   =Wrap
+   ========================================================================== */
+
+	#wrap {
+		background-color: #fff;
+	}
+	
+/* ==========================================================================
+   =Menu 
+   ========================================================================== */
+
+/* =Menu Skin
+   ========================================================================== */
+	
+	.sf-menu a {
+		color: #7b868c; 
+	}
+	
+	.sf-menu > li > a,
+	.sf-menu > li.dropdown > a {
+		color: #7b868c;
+	}
+	
+	.sf-menu > li > a:before { 
+		border-top: 1px solid transparent;
+	}
+	
+	.sf-menu > li > a:hover:before,
+	.sf-menu > li.current > a:before,
+	.sf-menu li.sfHover > a:before { border-top-color: #be9665; }
+
+/* =DropDown
+   ========================================================================== */
+	
+	.sf-menu li.dropdown ul {
+		border: 1px solid rgba(0, 0, 0, 0.1);	
+		background-color: #fff;			
+	}
+	
+	.sf-menu li.dropdown ul:before {
+		border-top: 2px solid #be9665;
+	}
+	
+	.sf-menu li.dropdown ul a:hover,
+	.sf-menu li.dropdown ul li.dropdown.sfHover > a { color: #be9665; }
+		
+/* =Mega Menu Section
+   ========================================================================== */
+	
+	.sf-mega {
+		border: 1px solid rgba(0, 0, 0, 0.1);
+		background-color: #fff;
+	}
+	
+	.sf-menu .sf-mega:before {
+		border-top: 2px solid #be9665;
+	}
+	
+	.sf-mega ul li a:hover { color: #be9665; }
+	
+/* =Menu Arrows
+   ========================================================================== */
+	
+	.sf-arrows .sf-with-ul:after {
+		border: 5px solid transparent;
+		border-top-color: #d7d7d7;
+	}
+		
+	.sf-arrows > li > .sf-with-ul:focus:after,
+	.sf-arrows > li:hover > .sf-with-ul:after,
+	.sf-arrows > .sfHover > .sf-with-ul:after { border-top-color: rgba(0, 0, 0, 0.7); }
+		
+	.sf-arrows ul .sf-with-ul:after {
+		border-color: transparent;
+		border-left-color: #d7d7d7;
+	}
+	
+	.sf-arrows ul li > .sf-with-ul:focus:after,
+	.sf-arrows ul li:hover > .sf-with-ul:after,
+	.sf-arrows ul .sfHover > .sf-with-ul:after { border-left-color: rgba(0, 0, 0, 0.7); }
+	
+/* ==========================================================================
+   =Mobile Menu 
+   ========================================================================== */
+			
+	#mobile-menu {
+		border-bottom: 1px solid #d7d7d7;
+	}
+	
+	#mobile-menu .sf-mega {
+		background: #fff;
+	}
+
+	#mobile-menu li a {
+		border-top: 1px solid #d7d7d7;
+		color: #28353e;
+	}
+	
+	#mobile-menu .mobile-menu-submenu-arrow {
+		border-left: 1px solid #d7d7d7;
+		color: #28353e;
+	}
+	
+	#mobile-menu .mobile-menu-submenu-arrow:hover { background-color: #f3f3f3; }	
+
+/* ==========================================================================
+   =Sticky Header
+   ========================================================================== */
+
+	@media (min-width: 1025px) {
+		
+		#header.stuck {
+			box-shadow: 0 3px 10px #d7d7d7;
+			background-color: rgba(255, 255, 255, 0.95);
+		}	
+	
+	}
+
+/* ==========================================================================
+   =Page Header
+   ========================================================================== */
+   	
+	#page-header {
+		border-top: 1px solid #d7d7d7;
+		border-bottom: 1px solid #d7d7d7;
+	}
+	
+/* ==========================================================================
+   =Back to top
+   ========================================================================== */
+
+	#back-to-top {
+		background-color: #28353e;
+		color: #fafafa;
+	}
+	
+	#back-to-top:hover { background-color: rgba(0, 0, 0, 0.7); }
+	#back-to-top:hover i { color: #fff; }
+	
+/* ==========================================================================
+   =Loader
+   ========================================================================== */
+
+	.bx-wrapper .bx-loading {
+		background: #fff url(../../js/bxslider/images/bx_loader.gif) no-repeat center center;
+	}
+
+/* ==========================================================================
+   =Pager
+   ========================================================================== */
+
+	.bx-wrapper .bx-pager {
+		color: #28353e;
+	}
+	
+	.bx-wrapper .bx-pager.bx-default-pager a {
+		border: 1px solid #be9665;		
+	}
+	
+	.bx-wrapper .bx-pager.bx-default-pager a:hover,
+	.bx-wrapper .bx-pager.bx-default-pager a.active { background: #be9665; }
+
+/* ==========================================================================
+   =Directional Controls (Next / Prev)
+   ========================================================================== */
+
+	.bx-wrapper .bx-prev {
+		background: url(../../images/left.png) no-repeat center center;
+	}
+	
+	.bx-wrapper .bx-next {
+		background: url(../../images/right.png) no-repeat center center;
+	}
+
+/* ==========================================================================
+   =Auto Controls (Start / Stop)
+   ========================================================================== */
+	
+	.bx-wrapper .bx-controls-auto .bx-start {
+		background: url(../../js/bxslider/images/controls.png) -86px -11px no-repeat;
+	}
+	
+	.bx-wrapper .bx-controls-auto .bx-stop {
+		background: url(../../js/bxslider/images/controls.png) -86px -44px no-repeat;
+	}
+
+/* ==========================================================================
+   =Image Captions
+   ========================================================================== */
+
+	.bx-wrapper .bx-caption {
+		background: rgba(80, 80, 80, 0.75);
+	}
+	
+	.bx-wrapper .bx-caption span {
+		color: #fff;
+	}
+
+/* ==========================================================================
+   =Basics
+   ========================================================================== */
+	
+	.slider-revolution.fullwidthbanner-container {
+		border-top: 1px solid #d7d7d7;
+		border-bottom: 1px solid #d7d7d7;
+	}
+
+/* ==========================================================================
+   =Rev Slider Pager
+   ========================================================================== */
+	   
+	.tp-bullets.simplebullets.round .bullet {
+		background: #7b868c;
+	}
+
+	.tp-bullets.simplebullets.round .bullet.selected { background: #be9665;  }
+
+/* ==========================================================================
+   =Rev Slider Nav 
+   ========================================================================== */
+
+	.tp-leftarrow.default { background: #28353e url(../../images/left.png) no-repeat center center; }
+	.tp-rightarrow.default { background: #28353e url(../../images/right.png) no-repeat center center; }
+	
+/* ==========================================================================
+   =Rev Slider Typography 
+   ========================================================================== */
+   
+   	.caption.title {
+		color: #28353e;
+	}
+	
+	.caption.text {
+		color: #fff;
+	}
+	
+	.caption.text-2 {
+		color: #7b868c;
+	}
+	
+	.caption.text-3 {
+		color: #7b868c;
+	}
+	
+	.caption .btn { 
+		color: #fff;
+	}
+	
+	.caption .btn:hover { color: #fff; }
+	.caption .btn.alt:hover { color: #be9665; }
+	
+
+	@media (min-width: 768px) and (max-width: 991px) {
+		
+		.caption .btn {
+			color: #fff;
+		}
+		
+	}
+
+	@media (max-width: 767px) {
+		
+		.caption .btn { 
+			color: #fff;
+		}
+		
+	}
