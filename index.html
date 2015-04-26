@@ -1,6 +1,6 @@
 <!DOCTYPE html>
-<html>
-    <head ng-app="rgs-app">
+<html ng-app="myApp">
+    <head>
 
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/> 
@@ -48,7 +48,8 @@
         <!-- <link rel="stylesheet" href="_layout/css/skins/default.css"> -->
         <!-- <link rel="stylesheet" href="_layout/css/skins/green.css"> -->
         <!-- <link rel="stylesheet" href="_layout/css/skins/brown.css"> -->
-
+        <script src="_layout/js/angular.min.js"></script>
+        <script src="js/app.js"></script>
 
 
     </head>
@@ -71,75 +72,8 @@
     <![endif]-->
 
         <div id="wrap">
-            <div id="header-wrap">
-                <div id="header">
-
-                    <!-- /// HEADER  //////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
-
-                    <div class="container">
-                        <div class="row">
-                            <div class="span3">
-
-                                <!-- // Logo // -->
-                                <div id="logo">
-                                    <a href="index.html">
-                                        <img src="_layout/images/rgs_logo_header.png" alt="website logo"> Resources Glow Solutions
-                                    </a>
-                                </div>
-
-                            </div><!-- end .span3 -->
-                            <div class="span9">
-
-                                <!-- // Mobile menu trigger // -->
-
-                                <a href="#" id="mobile-menu-trigger">
-                                    <i class="fa fa-bars"></i>
-                                </a>
-
-                                <!-- // Buy button // -->                                        
-
-                                <!--<a class="btn" id="buy-button" href="#">Buy <strong class="text-uppercase">Throne</strong> Now</a>-->
-
-
-                                <!-- // Menu // -->
-
-                                <nav>
-                                    <ul class="sf-menu fixed" id="menu">
-                                        <li class="dropdown current">
-                                            <a href="index.html">Home</a>                                            
-                                        </li>
-                                        <li class="dropdown">
-                                            <a href="#">Services</a>      
-                                            <ul>
-                                                <li>
-                                                    <a href="#">การทำบัญชีเงินเดือน</a>
-                                                </li>
-                                                <li>
-                                                    <a href="#">การสรรหาบุคลากร</a>
-                                                </li>
-                                                <li>
-                                                    <a href="#">ความต้องการด้านต่างๆ ทั้งหมดสำหรับชาวต่างชาติ</a>
-                                                </li>
-                                            </ul>
-                                        </li>                                        
-                                        <li class="dropdown">
-                                            <a href="portfolio-list.html">Portfolio</a>                                            
-                                        </li>
-                                        <li>                        	
-                                            <a href="#">About Us</a>                                           
-                                        </li>
-                                        <li><a href="#">Contact</a></li>
-                                    </ul>
-                                </nav>	
-
-                            </div><!-- end .span9 -->
-                        </div><!-- end .row -->		
-                    </div><!-- end .container -->
-
-                    <!-- //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
-
-                </div><!-- end #header -->
-            </div><!-- end #header-wrap -->	
+            
+           <div ng-include src="'header.html'"></div>
             <div id="content">
 
                 <!-- /// CONTENT  /////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
@@ -703,7 +637,7 @@
         <script src="_layout/js/plugins.js"></script>	
         <script src="_layout/js/scripts.js"></script>
 
-        <script src="_layout/js/angular.min.js"></script>
+        
 
 
 
