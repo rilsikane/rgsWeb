@@ -36,6 +36,10 @@ myApp.config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $
             url:'/job-position-list',
             templateUrl:'all-job-position-list.html'
         })
+        .state('contact',{
+            url:'/contact',
+            templateUrl:'contact.html'
+        })
  
 }]);
 myApp.directive('slideit',function($timeout) {
