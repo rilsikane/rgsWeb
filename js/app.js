@@ -32,7 +32,7 @@ myApp.config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $
                ];
             }
         })
-		.state('jobsPosition-list',{
+        .state('jobsPosition-list',{
             url:'/job-position-list/:page',
             templateUrl:'all-job-position-list.html',
             controller: 'JobPositionCtrl'
@@ -45,6 +45,10 @@ myApp.config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $
         .state('contact',{
             url:'/contact',
             templateUrl:'contact.html'
+        })
+        .state('about',{
+            url:'/about',
+            templateUrl:'aboutus-page.html'
         })
  
 }]);
