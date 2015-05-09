@@ -261,6 +261,33 @@ myApp.controller('JobPositionCtrl', function ($scope, $stateParams) {
                   'description' : 'Maybe your experience will be qualified and if this opportunity is of interest to you, please provide an update resume, Expected salary and also availability to start working (in case you are qualified), as well as the best way to get in touch with you so that we can discuss this further and we would appreciate a prompt response.'
                 }
             ]
+        }else if($scope.page=='3'){
+          $scope.jobs = [
+                {
+                  'id': 7,
+                  'image': '_content/portfolio/370x230-4.jpg',
+                  'title' : 'Automotive3',
+                  'location' :  'Bangkok',
+                  'date' : 'May 9, 2015',
+                  'description' : 'Maybe your experience will be qualified and if this opportunity is of interest to you, please provide an update resume, Expected salary and also availability to start working (in case you are qualified), as well as the best way to get in touch with you so that we can discuss this further and we would appreciate a prompt response.'
+                },
+                {
+                  'id': 8,
+                  'image': '_content/portfolio/370x230-5.jpg',
+                  'title' : 'BTS&MRT Company3',
+                  'location' :  'Bangkok',
+                  'date' : 'May 9, 2015',
+                  'description' : 'Maybe your experience will be qualified and if this opportunity is of interest to you, please provide an update resume, Expected salary and also availability to start working (in case you are qualified), as well as the best way to get in touch with you so that we can discuss this further and we would appreciate a prompt response.'
+                },
+                 {
+                  'id': 9,
+                  'image': '_content/portfolio/370x230-6.jpg',
+                  'title' : 'BTS&MRT Company3',
+                  'location' :  'Bangkok',
+                  'date' : 'May 9, 2015',
+                  'description' : 'Maybe your experience will be qualified and if this opportunity is of interest to you, please provide an update resume, Expected salary and also availability to start working (in case you are qualified), as well as the best way to get in touch with you so that we can discuss this further and we would appreciate a prompt response.'
+                }
+            ]
         }
     
 });
