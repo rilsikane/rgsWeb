@@ -61,8 +61,8 @@
             </div><!-- end .container -->
             
             <br><br>
-            
-            <div class="container">
+            <div ng-controller="JobPositionCtrl">
+            <div class="container" ng-repeat="job in jobs">
             	<div class="row">
                 	<div class="span12">
                     	
@@ -73,7 +73,7 @@
                                 	
                                     <div class="portfolio-item-preview">
                                     	
-                                        <img src="_content/portfolio/370x230-1.jpg" alt="">
+                                        <img ng-src="{{job.image}}" alt="">
                                         
                                     </div><!-- end .portfolio-item-preview -->
                                     
@@ -83,16 +83,16 @@
                                     <div class="portfolio-item-description">	
                                     	
                                         <h5>
-                                        	<a href="portfolio-item.html">Automotive</a>
+                                        	<a href="portfolio-item.html">{{job.title}}</a>
                                         </h5>
                                         
                                         <p>
-                                        	Location: <span class="mute">Bangkok</span><br>
-                                            Date: <span class="mute">May 9, 2015</span><br>
+                                        	Location: <span class="mute">{{job.location}}</span><br>
+                                            Date: <span class="mute">{{job.date}}</span><br>
                                             <!-- Category: <span class="mute">Interior Design</span> -->
                                         </p>
                                         
-                                        <p>Maybe your experience will be qualified and if this opportunity is of interest to you, please provide an update resume, Expected salary and also availability to start working (in case you are qualified), as well as the best way to get in touch with you so that we can discuss this further and we would appreciate a prompt response.</p>
+                                        <p>{{job.description}}</p>
                                         
                                         <a class="btn" href="portfolio-item.html">View position</a>
                                         
@@ -107,109 +107,19 @@
                 </div><!-- end .row -->
             </div><!-- end .container -->
             
-            <div class="container">
-            	<div class="row">
-                	<div class="span12">
-                    	
-                        <div class="portfolio-item">
-                        	
-                            <div class="row">
-                            	<div class="span6">
-                                	
-                                    <div class="portfolio-item-preview">
-                                    	
-                                        <img src="_content/portfolio/370x230-2.jpg" alt="">
-                                        
-                                    </div><!-- end .portfolio-item-preview -->
-                                    
-                                </div><!-- end .span6 -->
-                                <div class="span6">
-                                	
-                                    <div class="portfolio-item-description">	
-                                    	
-                                        <h5>
-                                        	<a href="portfolio-item.html">BTS&MRT Company</a>
-                                        </h5>
-                                        
-                                        <p>
-                                            Location: <span class="mute">Bangkok</span><br>
-                                            Date: <span class="mute">May 9, 2015</span><br>
-                                            <!-- Category: <span class="mute">Interior Design</span> -->
-                                        </p>
-                                        
-                                       <p>Maybe your experience will be qualified and if this opportunity is of interest to you, please provide an update resume, Expected salary and also availability to start working (in case you are qualified), as well as the best way to get in touch with you so that we can discuss this further and we would appreciate a prompt response.</p>
-                                        
-                                        <a class="btn" href="portfolio-item.html">View Position</a>
-                                        
-                                    </div><!-- end .portfolio-item-description -->
-                                    
-                                </div><!-- end .span6 -->
-                            </div><!-- end .row -->
-                            
-                        </div><!-- end .portfolio-item -->
-                        
-                    </div><!-- end .span12 -->
-                </div><!-- end .row -->
-            </div><!-- end .container -->
-            
-            <div class="container">
-            	<div class="row">
-                	<div class="span12">
-                    	
-                        <div class="portfolio-item">
-                        	
-                            <div class="row">
-                            	<div class="span6">
-                                	
-                                    <div class="portfolio-item-preview">
-                                    	
-                                        <img src="_content/portfolio/370x230-3.jpg" alt="">
-                                        
-                                    </div><!-- end .portfolio-item-preview -->
-                                    
-                                </div><!-- end .span6 -->
-                                <div class="span6">
-                                	
-                                    <div class="portfolio-item-description">	
-                                    	
-                                        <h5>
-                                        	<a href="portfolio-item.html">Construction Company</a>
-                                        </h5>
-                                        
-                                        <p>
-                                            Location: <span class="mute">Bangkok</span><br>
-                                            Date: <span class="mute">May 9, 2015</span><br>
-                                            <!-- Category: <span class="mute">Interior Design</span> -->
-                                        </p>
-                                        
-                                       <p>Maybe your experience will be qualified and if this opportunity is of interest to you, please provide an update resume, Expected salary and also availability to start working (in case you are qualified), as well as the best way to get in touch with you so that we can discuss this further and we would appreciate a prompt response.</p>
-                                        
-                                        <a class="btn" href="portfolio-item.html">View Position</a>
-                                        
-                                        
-                                    </div><!-- end .portfolio-item-description -->
-                                    
-                                </div><!-- end .span6 -->
-                            </div><!-- end .row -->
-                            
-                        </div><!-- end .portfolio-item -->
-                        
-                    </div><!-- end .span12 -->
-                </div><!-- end .row -->
-            </div><!-- end .container -->
             
             <div class="container">
                 <div class="row">
                     <div class="span12">
                         
                         <ul class="pagination fixed">
-                            <li class="current">
-                                <a href="#job-position-list">1</a>
+                            <li ng-class="{current: page=='1'}">
+                                <a ui-sref="jobsPosition({ page: '1'})">1</a>
                             </li>
-                            <li>
-                                <a href="#">2</a>
+                            <li ng-class="{current: page=='2'}">
+                                <a ui-sref="jobsPosition({ page: '2'})">2</a>
                             </li>
-                            <li>
+                            <li ng-class="{current: page=='3'}">
                                 <a href="#">3</a>
                             </li>
                         </ul><!-- end .pagination -->
@@ -217,5 +127,7 @@
                     </div><!-- end .span12 -->
                 </div><!-- end .row -->
             </div><!-- end .container -->
+
+        </div>
             
 		<!-- //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->

@@ -21,7 +21,7 @@ myApp.config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $
             templateUrl: 'home.html',
             controller: 'MainCtrl'
         })
-        .state('services', {
+        .state('single-service_1', {
             url:'/single-service_1',
             templateUrl: 'single-service_1.html',
             controller: function ($scope) {
@@ -33,8 +33,9 @@ myApp.config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $
             }
         })
 		.state('jobsPosition',{
-            url:'/job-position-list',
-            templateUrl:'all-job-position-list.html'
+            url:'/job-position-list/:page',
+            templateUrl:'all-job-position-list.html',
+            controller: 'JobPositionCtrl'
         })
  
 }]);
@@ -190,3 +191,67 @@ myApp.controller('MainCtrl', function($scope) {
 myApp.controller('ServiceCtrl', function ($scope) {
 
 });
+
+myApp.controller('JobPositionCtrl', function ($scope, $stateParams) {
+    $scope.page = $stateParams.page;
+            if($scope.page=='1'){
+             $scope.jobs = [
+                {
+                  'id': 1,
+                  'image': '_content/portfolio/370x230-1.jpg',
+                  'title' : 'Automotive',
+                  'location' :  'Bangkok',
+                  'date' : 'May 9, 2015',
+                  'description' : 'Maybe your experience will be qualified and if this opportunity is of interest to you, please provide an update resume, Expected salary and also availability to start working (in case you are qualified), as well as the best way to get in touch with you so that we can discuss this further and we would appreciate a prompt response.'
+                },
+                {
+                  'id': 2,
+                  'image': '_content/portfolio/370x230-2.jpg',
+                  'title' : 'BTS&MRT Company',
+                  'location' :  'Bangkok',
+                  'date' : 'May 9, 2015',
+                  'description' : 'Maybe your experience will be qualified and if this opportunity is of interest to you, please provide an update resume, Expected salary and also availability to start working (in case you are qualified), as well as the best way to get in touch with you so that we can discuss this further and we would appreciate a prompt response.'
+                },
+                 {
+                  'id': 3,
+                  'image': '_content/portfolio/370x230-3.jpg',
+                  'title' : 'BTS&MRT Company',
+                  'location' :  'Bangkok',
+                  'date' : 'May 9, 2015',
+                  'description' : 'Maybe your experience will be qualified and if this opportunity is of interest to you, please provide an update resume, Expected salary and also availability to start working (in case you are qualified), as well as the best way to get in touch with you so that we can discuss this further and we would appreciate a prompt response.'
+                }
+            ]
+        } else if($scope.page=='2'){
+            $scope.jobs = [
+                {
+                  'id': 4,
+                  'image': '_content/portfolio/370x230-4.jpg',
+                  'title' : 'Automotive2',
+                  'location' :  'Bangkok',
+                  'date' : 'May 9, 2015',
+                  'description' : 'Maybe your experience will be qualified and if this opportunity is of interest to you, please provide an update resume, Expected salary and also availability to start working (in case you are qualified), as well as the best way to get in touch with you so that we can discuss this further and we would appreciate a prompt response.'
+                },
+                {
+                  'id': 5,
+                  'image': '_content/portfolio/370x230-5.jpg',
+                  'title' : 'BTS&MRT Company2',
+                  'location' :  'Bangkok',
+                  'date' : 'May 9, 2015',
+                  'description' : 'Maybe your experience will be qualified and if this opportunity is of interest to you, please provide an update resume, Expected salary and also availability to start working (in case you are qualified), as well as the best way to get in touch with you so that we can discuss this further and we would appreciate a prompt response.'
+                },
+                 {
+                  'id': 6,
+                  'image': '_content/portfolio/370x230-6.jpg',
+                  'title' : 'BTS&MRT Company2',
+                  'location' :  'Bangkok',
+                  'date' : 'May 9, 2015',
+                  'description' : 'Maybe your experience will be qualified and if this opportunity is of interest to you, please provide an update resume, Expected salary and also availability to start working (in case you are qualified), as well as the best way to get in touch with you so that we can discuss this further and we would appreciate a prompt response.'
+                }
+            ]
+        }
+    $scope.onPageChange = function(page){
+
+    }
+});
+
+

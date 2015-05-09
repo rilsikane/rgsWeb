@@ -23,13 +23,16 @@
 		width: 100% !important;
 		padding: 0;
 		margin: 0; 
+		max-height: 200% !important; /* 1 */
 	}
 
-	.fullwidthbanner-container ul { list-style: none; }
+	.fullwidthbanner-container ul { list-style: none; 
+	max-height: 200% !important; /* 1 */}
 
 	.fullwidthbanner-container .fullwidthbanner {
 		position: relative;
 		width: 100% !important;
+		max-height: 200% !important; /* 1 */
 	}
 	
 	/**
@@ -38,14 +41,21 @@
  	 */
 	
 	.slider-revolution.fullwidthbanner-container {
-		max-height: 610px !important; /* 1 */
+		max-height: 200% !important; /* 1 */
 		border-top: 1px solid #d7d7d7;
 		border-bottom: 1px solid #d7d7d7;
 		margin-bottom: 90px; 
 	}
 
 	.slider-revolution.fullwidthbanner-container .fullwidthbanner {
-		max-height: 610px !important; /* 1 */
+		max-height: 200% !important; /* 1 */
+	}
+	.revslider-container {
+	  width: 100% !important;
+	  position: relative;
+	  padding: 0;
+	  max-height: 300px !important;
+	  overflow: hidden;
 	}
 
 /* ==========================================================================
