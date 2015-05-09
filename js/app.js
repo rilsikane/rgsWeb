@@ -174,7 +174,13 @@ myApp.controller('ServiceCtrl', function ($scope) {
 });
 
 myApp.controller('MainCtrl', function($scope) {
-  
+  $scope.pictures = [
+                 {src: '_content/services/finance.jpg' },
+                 {src: '_content/services/slider/555x360-2.jpg' },
+                 {src: '_content/services/slider/555x360-3.jpg' }
+               ];
+
+
 });
 
 myApp.controller('ServiceCtrl', function ($scope) {
