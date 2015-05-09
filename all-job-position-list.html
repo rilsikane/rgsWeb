@@ -43,12 +43,12 @@
                             
                             <ul>
                                 <li class="active">
-                                    <a href="#job-position-list">
+                                    <a ui-sref="jobsPosition-list({ page: 1})">
                                         <i class="fa fa-list-ul"></i>
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#job-position-grid">
+                                    <a ui-sref="jobsPosition-grid({ page: 1})">
                                         <i class="fa fa-th-large"></i>
                                     </a>
                                 </li>
@@ -114,10 +114,10 @@
                         
                         <ul class="pagination fixed">
                             <li ng-class="{current: page=='1'}">
-                                <a ui-sref="jobsPosition({ page: '1'})">1</a>
+                                <a ui-sref="jobsPosition-list({ page: '1'})">1</a>
                             </li>
                             <li ng-class="{current: page=='2'}">
-                                <a ui-sref="jobsPosition({ page: '2'})">2</a>
+                                <a ui-sref="jobsPosition-list({ page: '2'})">2</a>
                             </li>
                             <li ng-class="{current: page=='3'}">
                                 <a href="#">3</a>

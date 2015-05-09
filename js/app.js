@@ -32,9 +32,14 @@ myApp.config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $
                ];
             }
         })
-		.state('jobsPosition',{
+		.state('jobsPosition-list',{
             url:'/job-position-list/:page',
             templateUrl:'all-job-position-list.html',
+            controller: 'JobPositionCtrl'
+        })
+        .state('jobsPosition-grid',{
+            url:'/job-position-grid/:page',
+            templateUrl:'all-job-position-grid.html',
             controller: 'JobPositionCtrl'
         })
         .state('contact',{
@@ -253,9 +258,7 @@ myApp.controller('JobPositionCtrl', function ($scope, $stateParams) {
                 }
             ]
         }
-    $scope.onPageChange = function(page){
-
-    }
+    
 });
 
 
