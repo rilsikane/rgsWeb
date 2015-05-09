@@ -32,6 +32,28 @@ myApp.config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $
                ];
             }
         })
+         .state('single-service_2', {
+            url:'/single-service_2',
+            templateUrl: 'single-service_2.html',
+            controller: function ($scope) {
+              $scope.pictures = [
+                 {src: '_content/services/finance.jpg' },
+                 {src: '_content/services/slider/555x360-2.jpg' },
+                 {src: '_content/services/slider/555x360-3.jpg' }
+               ];
+            }
+        })
+         .state('single-service_3', {
+            url:'/single-service_3',
+            templateUrl: 'single-service_3.html',
+            controller: function ($scope) {
+              $scope.pictures = [
+                 {src: '_content/services/finance.jpg' },
+                 {src: '_content/services/slider/555x360-2.jpg' },
+                 {src: '_content/services/slider/555x360-3.jpg' }
+               ];
+            }
+        })
         .state('jobsPosition-list',{
             url:'/job-position-list/:page',
             templateUrl:'all-job-position-list.html',
